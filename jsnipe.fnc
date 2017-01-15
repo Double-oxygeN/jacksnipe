@@ -290,6 +290,9 @@ const console = {
   groupCollapsed: s => print("\033[44m ---" + s + "---"),
   groupEnd: () => print("--- GROUP END --- \033[0m")
 };
+
+var _ = new Library();
+_.time(10, _.shuffle, _, [_.range(0, 12)]);
 EOT
 }
 
@@ -314,7 +317,7 @@ cat << EOT > README.md
 FIXME: description
 
 ## License
-This software is licensed under the Apache License, version 2.0  
+This software is licensed under the Apache License, version 2.0
 See ./LICENSE
 
 Copyright ©︎ $(date '+%Y') $2
