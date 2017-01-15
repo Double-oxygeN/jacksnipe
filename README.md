@@ -29,7 +29,7 @@ Before using this command, you should add the code to `.test.js` file
 You should also be able to use `jsc` command
 
 ## License
-This code is licensed under the Apache License, version 2.0
+This code is licensed under the Apache License, version 2.0  
 See ./LICENSE
 
 Copyright ©︎ 2017 Double_oxygeN

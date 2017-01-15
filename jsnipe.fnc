@@ -314,7 +314,7 @@ cat << EOT > README.md
 FIXME: description
 
 ## License
-This software is licensed under the Apache License, version 2.0
+This software is licensed under the Apache License, version 2.0  
 See ./LICENSE
 
 Copyright ©︎ $(date '+%Y') $2
