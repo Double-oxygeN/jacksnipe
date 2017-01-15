@@ -20,6 +20,7 @@ Now you can use `jsnipe` command
 If you would like to create new JavaScript project, for example,
 
     $ jsnipe new {project name here}
+    $ cd {project name here}
     $ jsnipe run
 
 The framework is created and you can begin the development from this state
