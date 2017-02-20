@@ -171,11 +171,22 @@ function Library() {
       return arguments[0];
     }
   };
-  this.range = function (start, end, step) {
+  this.range = function () {
     let arr = [],
-      st = start || 0,
-      ed = end || 0xffff,
-      sp = step || 1;
+      st, ed, sp;
+    switch (arguments.length) {
+    case 1:
+        [st, ed, sp] = [0, arguments[0], 1];
+      break;
+    case 2:
+        [st, ed, sp] = [arguments[0], arguments[1], 1];
+      break;
+    case 3:
+        [st, ed, sp] = [arguments[0], arguments[1], arguments[2]];
+      break;
+    default:
+        [st, ed, sp] = [0, 0, 1];
+    }
     while (st < ed) {
       arr.push(st);
       st = st + sp;
